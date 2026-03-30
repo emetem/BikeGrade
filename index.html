@@ -3,47 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>emetem.com — BikeGrade</title>
-  <meta name="description" content="BikeGrade app by emetem.com — road gradient for cyclists. Legal documents and contact." />
+  <title>EmetEM — independent developer</title>
+  <meta name="description" content="EmetEM — mobile apps and software. BikeGrade: real-time road gradient for cyclists. Legal documents and contact." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
-      <h1>emetem.com</h1>
-      <p>Independent developer · mobile apps &amp; software</p>
-      <nav class="links" aria-label="Main">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-        <a href="mailto:emetemdev@gmail.com">Contact</a>
+  <div class="wrap wrap--wide">
+    <header class="dev-header">
+      <a class="brand" href="index.html" aria-current="page">
+        <span class="brand__main">Emet</span><span class="brand__em">EM</span>
+      </a>
+      <p class="dev-tagline">Independent developer · mobile apps &amp; software</p>
+      <nav class="dev-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="home-card">
-        <h2>BikeGrade</h2>
-        <p>
-          <strong>BikeGrade</strong> shows road incline (gradient) in real time using your phone’s sensors.
-          It is published on app stores under the developer name <strong>emetem.com</strong>.
+      <section id="about" class="hero-dev">
+        <h1 class="hero-dev__title">Building focused tools for everyday use</h1>
+        <p class="hero-dev__lead">
+          <strong>EmetEM</strong> is the public name I use for apps published under
+          <strong>emetem.com</strong> on app stores. Projects are built with attention to privacy,
+          clarity, and real-world use on the road.
         </p>
       </section>
-      <section class="home-card">
-        <h2>Legal &amp; privacy</h2>
-        <p>
-          Our <a href="privacy-policy.html">Privacy Policy</a> explains how BikeGrade handles data (offline-first, no analytics in the app).
-          The <a href="terms-of-use.html">Terms of Use</a> govern use of the app. Both are written in English for global distribution.
-        </p>
+
+      <section id="projects" class="section-block" aria-labelledby="projects-heading">
+        <div class="section-head">
+          <h2 id="projects-heading">Projects</h2>
+          <p class="section-sub">Apps and software you can install today</p>
+        </div>
+
+        <article class="project-card">
+          <header class="project-card__head">
+            <h3 class="project-card__title">BikeGrade</h3>
+            <span class="badge">Mobile</span>
+          </header>
+          <p class="project-card__pitch">
+            <strong>BikeGrade</strong> shows road incline (gradient) in real time using your phone’s
+            orientation sensors—so you can see grade while you ride, with optional overlay and local
+            recordings. The app is designed <strong>offline-first</strong>: no account required, and
+            no analytics SDKs in the app.
+          </p>
+          <ul class="project-card__features">
+            <li>Live incline display (degrees or percent), calibration, and graphs</li>
+            <li>Optional overlay / bubble on supported Android setups for glanceable grade</li>
+            <li>Local recordings of sampled incline over time; settings stay on your device</li>
+            <li>Published on app stores under developer name <strong>emetem.com</strong></li>
+          </ul>
+          <div class="project-card__docs">
+            <h4 class="project-card__docs-title">Documents &amp; links</h4>
+            <ul class="doc-links">
+              <li><a href="privacy-policy.html">Privacy Policy</a> — how BikeGrade handles data</li>
+              <li><a href="terms-of-use.html">Terms of Use</a> — license, disclaimers, governing law</li>
+              <li><a href="mailto:emetemdev@gmail.com">Support &amp; privacy contact</a> — emetemdev@gmail.com</li>
+            </ul>
+          </div>
+        </article>
       </section>
-      <section class="home-card">
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:emetemdev@gmail.com">emetemdev@gmail.com</a>
-        </p>
+
+      <section id="contact" class="section-block section-block--compact">
+        <h2 class="visually-hidden">Contact</h2>
+        <div class="contact-card">
+          <p class="contact-card__label">Email</p>
+          <p class="contact-card__value"><a href="mailto:emetemdev@gmail.com">emetemdev@gmail.com</a></p>
+          <p class="contact-card__hint">Same address as in Google Play / App Store developer contact.</p>
+        </div>
       </section>
     </main>
 
-    <footer class="site">
-      <p>© emetem.com · Last updated March 2026</p>
+    <footer class="site site-footer">
+      <p>© EmetEM / emetem.com · Last updated March 2026</p>
+      <p class="site-footer__mini">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        ·
+        <a href="terms-of-use.html">Terms of Use</a>
+      </p>
     </footer>
   </div>
 </body>
