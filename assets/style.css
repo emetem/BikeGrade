@@ -51,6 +51,41 @@ a:hover {
   max-width: 52rem;
 }
 
+/* Teaser: only logo visible — remove .site-teaser from <body> to restore full page */
+body.site-teaser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body.site-teaser .wrap {
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  width: 100%;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+}
+
+body.site-teaser .dev-header {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+body.site-teaser .dev-tagline,
+body.site-teaser .dev-nav,
+body.site-teaser main,
+body.site-teaser .site-footer {
+  display: none;
+}
+
+body.site-teaser .brand {
+  font-size: clamp(2rem, 8vw, 3rem);
+}
+
 /* —— Developer header —— */
 .dev-header {
   margin-bottom: 2.75rem;
